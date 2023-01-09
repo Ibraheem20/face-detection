@@ -1,0 +1,70 @@
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    max-width: 25%;
+    border-radius: 6px;
+    background-color: rgb(62, 1, 118);
+    padding: 2%;
+    text-align: center;
+    color: white;
+}
+section form{
+    width: 100%;
+}
+section h2{
+    margin: 0;
+    padding-bottom: 5px;
+    margin-bottom: 5%;
+    border-bottom: 1px solid white;
+}
+section div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:5%;
+}
+section input{
+    width: 100%;
+    background-color: rgb(205, 186, 224);
+    border-radius: 5px;
+    padding: 0.25rem;
+}
+.buttons{
+    margin-bottom: 0;
+}
+.submit-active{
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: rgb(151, 81, 217);
+    color: white;
+    width: 50%;
+    height:100%;
+    border: none;
+    cursor: pointer;
+}
+.submit-disable{
+    padding: 2%;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    background-color: rgb(149, 144, 154);
+    color: white;
+    width: 50%;
+    height:100%;
+    border: none;
+}
+.switch{
+    color: rgb(158, 90, 221);
+    background-color:inherit;
+    border: none;
+    cursor: pointer;
+}
+.submit-active:hover{
+    background-color: rgb(181, 137, 222);
+}
+.switch:hover{
+    color: rgb(181, 137, 222);
+}

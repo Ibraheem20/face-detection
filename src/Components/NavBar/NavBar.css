@@ -1,0 +1,37 @@
+.container{
+    display:flex;
+    background-color: rgb(62, 1, 118);
+}
+.title{
+    color: white;
+    margin-left: 10%;
+    flex-grow: 3;
+    text-decoration-line: none;
+
+}
+.login,.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    
+}
+.login button{
+    display: inline-block;
+}
+.login, .home {
+    flex-grow: 0.25;
+    margin:1%;
+    color: white;
+    background-color:inherit;
+    
+    
+}
+#active-button{
+    border: 1px solid white;
+    border-radius:5px
+}
+.login:hover, .home:hover{
+    cursor: pointer;
+    background-color: rgb(158, 97, 215);
+}
