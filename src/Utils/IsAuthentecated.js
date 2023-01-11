@@ -11,7 +11,8 @@ function IsAuthentecated(props){
             {context.token?
             props.children
             :
-            navigate('/login')}
+            navigate('/')
+            }
         </>
     )
 }

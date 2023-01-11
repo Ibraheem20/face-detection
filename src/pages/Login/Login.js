@@ -36,14 +36,14 @@ function Login(){
         }
         ).then(res =>{
             setIsWaiting(false);
-            if(res.ok){
-                res.json().then(async data => await context.login(data.idToken));
-                navigate('/profile')
-            }else{
-                res.json().then(data =>{alert(data.error.message)})
-                
+            if(!res.ok){
+                throw new Error('error');
             }
-        })
+                // res.json().then(data =>{alert(data.error.message)})
+                return res.json()                
+        }).then(data =>{context.login(data.idToken);navigate('/profile');})
+        .catch(err=>console.log('err',err))
+        
     }
 
     return(
