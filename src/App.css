@@ -2,9 +2,15 @@
   text-align: center;
 }
 
-
-button{
+button {
   cursor: pointer;
+}
+.route-error {
+  margin-top: 100px;
+  text-align: center;
+  font-size: 72px;
+  font-family: "Fuzzy Bubbles", cursive;
+  color: rgb(218, 55, 85);
 }
 
 @media (prefers-reduced-motion: no-preference) {
